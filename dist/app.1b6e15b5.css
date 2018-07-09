@@ -1,0 +1,1513 @@
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .parent_v-centered {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .parent_v-end {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .parent_inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .parent_h-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media (max-width: 768px) {
+      .parent_h-around-xs {
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+  .parent_h-centered {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 768px) {
+      .parent_h-centered-xs {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  .parent_h-end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .parent_h-between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .parent_centered {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .parent_row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .parent_column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .parent_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .parent_grow-childs > * {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+
+.order_first {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+  @media (max-width: 1199px) {
+    .order_first-md {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
+  @media (max-width: 991px) {
+    .order_first-sm {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
+  @media (max-width: 768px) {
+    .order_first-xs {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
+  @media (max-width: 445px) {
+    .order_first-xxs {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
+
+.order_last {
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10; }
+  @media (max-width: 768px) {
+    .order_last-xs {
+      -webkit-box-ordinal-group: 11;
+          -ms-flex-order: 10;
+              order: 10; } }
+  @media (max-width: 445px) {
+    .order_last-xxs {
+      -webkit-box-ordinal-group: 11;
+          -ms-flex-order: 10;
+              order: 10; } }
+
+.width_fill {
+  min-width: 100%; }
+  @media (max-width: 768px) {
+    .width_fill-xs {
+      min-width: 100%; } }
+  @media (max-width: 445px) {
+    .width_fill-xxs {
+      min-width: 100%; } }
+
+.width_fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.height_fill {
+  height: 100%; }
+
+.margin_zero {
+  margin: 0; }
+
+.margin-bottom_zero {
+  margin-bottom: 0; }
+
+.margin-bottom_quarter {
+  margin-bottom: 0.25em; }
+
+.margin-bottom_small {
+  margin-bottom: 0.5em; }
+
+.margin-bottom_base {
+  margin-bottom: 1em; }
+  .margin-bottom_base-quarter {
+    margin-bottom: 1.25em; }
+  @media (max-width: 768px) {
+    .margin-bottom_base-xs {
+      margin-bottom: 1em; } }
+
+.margin_centered {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 1199px) {
+    .margin_centered-md {
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (max-width: 768px) {
+    .margin_centered-xs {
+      margin-left: auto;
+      margin-right: auto; } }
+
+.margin-top_auto {
+  margin-top: auto; }
+
+.margin-top_extra {
+  margin-top: 4em; }
+
+.margin-top_quarter {
+  margin-top: 0.25em; }
+
+.margin-top_zero-force {
+  margin-top: 0 !important; }
+
+.margin-top_increased {
+  margin-top: 1.5em; }
+
+.margin-top_base {
+  margin-top: 1em; }
+  @media (max-width: 768px) {
+    .margin-top_base-xs {
+      margin-top: 1em; } }
+  @media (max-width: 445px) {
+    .margin-top_base-xxs {
+      margin-top: 1em; } }
+
+.margin-top_zero {
+  margin-top: 0; }
+  @media (max-width: 1199px) {
+    .margin-top_zero-md {
+      margin-top: 0; } }
+
+.margin-top_small {
+  margin-top: 0.5em; }
+  @media (max-width: 768px) {
+    .margin-top_small-xs {
+      margin-top: 0.5em; } }
+  @media (max-width: 445px) {
+    .margin-top_small-xxs {
+      margin-top: 0.5em; } }
+
+.margin-top_large {
+  margin-top: 2em; }
+  @media (max-width: 768px) {
+    .margin-top_large-xs {
+      margin-top: 2em; } }
+
+@media (max-width: 768px) {
+  .margin-left_zero-xs {
+    margin-left: 0; } }
+
+.margin-left_7 {
+  margin-left: 7px; }
+
+.margin-left_small {
+  margin-left: 0.5em; }
+
+.margin-left_auto {
+  margin-left: auto; }
+
+.margin-left_base {
+  margin-left: 1em; }
+
+.margin-left_increased {
+  margin-left: 1.5em; }
+
+@media (max-width: 768px) {
+  .margin-right_zero-xs {
+    margin-right: 0; } }
+
+.margin-right_6 {
+  margin-right: 6px; }
+
+.margin-right_auto {
+  margin-right: auto; }
+
+.margin-right_small {
+  margin-right: 0.5em; }
+  .margin-right_small-quarter {
+    margin-right: 0.75em; }
+
+.margin-right_increased {
+  margin-right: 1.5em; }
+
+.margin-right_base {
+  margin-right: 1em; }
+  .margin-right_base-quarter {
+    margin-right: 1.25em; }
+
+.margin-right_large {
+  margin-right: 2em; }
+
+.submitButton {
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  border: 0;
+  padding-bottom: 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.4em;
+  min-width: 82px;
+  color: rgba(51, 59, 78, 0.8);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms; }
+  .submitButton_comment {
+    padding: .35em 1.4em;
+    margin-bottom: 2em;
+    margin-top: .5em; }
+  .submitButton_green {
+    background-color: #2dc86f;
+    color: #fff; }
+  .submitButton_offsets {
+    padding-left: 0.9em;
+    padding-right: 0.9em; }
+  .submitButton_shadow-light {
+    -webkit-box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);
+            box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15); }
+
+[aria-expanded="false"] .fa-chevron-up {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
+
+.fa-chevron-down,
+.fa-chevron-up {
+  -webkit-transition-duration: 242ms;
+          transition-duration: 242ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  will-change: transform;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  color: currentColor; }
+
+.fa-chevron-down[data-expended="true"] {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.tapButton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  padding: 6px 12px 6px;
+  color: #212121;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 0; }
+  .tapButton_border {
+    border-width: 1px;
+    border-style: solid; }
+    .tapButton_border-pale {
+      border-color: #e8e8e8; }
+  .tapButton__label {
+    min-height: 28px;
+    min-width: 28px;
+    background: #fff;
+    color: #2dc86f;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    font-weight: bold; }
+  .tapButton_white {
+    background-color: #fff;
+    color: #2dc86f; }
+  .tapButton_greenHover:hover, .tapButton_greenHover:focus, .tapButton_greenHover:active {
+    background-color: #2dc86f; }
+    .tapButton_greenHover:hover, .tapButton_greenHover:hover > *, .tapButton_greenHover:focus, .tapButton_greenHover:focus > *, .tapButton_greenHover:active, .tapButton_greenHover:active > * {
+      color: #fff !important; }
+  .tapButton_greenColor {
+    color: #2dc86f; }
+  .tapButton__icon {
+    margin-right: 6px; }
+  .tapButton_shadow-hard {
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4); }
+  .tapButton_shadow-light {
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15); }
+  .tapButton_round {
+    padding-bottom: .5em;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; }
+  .tapButton:hover, .tapButton:focus {
+    color: currentColor; }
+  .tapButton_green {
+    background-color: #2dc86f;
+    color: #fff; }
+    .tapButton_green:hover, .tapButton_green:focus {
+      color: #fff; }
+
+.actionButton {
+  border-radius: 50%;
+  border: 0;
+  margin-right: 0.8em;
+  width: 24px;
+  height: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms; }
+  .actionButton:last-child {
+    margin-right: 0; }
+  .actionButton-size_10 {
+    font-size: 10px; }
+  .actionButton-size_15 {
+    font-size: 15px; }
+  .actionButton-circleSize_26 {
+    min-width: 26px;
+    min-height: 26px; }
+  .actionButton_gray {
+    background-color: #e8e8e8;
+    color: #212121; }
+  .actionButton_red:not([disabled]) {
+    background-color: #cd0920;
+    color: #fff; }
+    .actionButton_red:not([disabled]):focus, .actionButton_red:not([disabled]):hover {
+      background-color: #9c0718; }
+  .actionButton_darkBlue {
+    background-color: #202736;
+    color: #fff; }
+  .actionButton_yellow:not([disabled]):focus, .actionButton_yellow:not([disabled]):hover, .actionButton_darkBlue:not([disabled]):focus, .actionButton_darkBlue:not([disabled]):hover, .actionButton_red:not([disabled]):focus, .actionButton_red:not([disabled]):hover {
+    color: #fff; }
+  .actionButton_yellow:not([disabled]) {
+    background-color: #e5c804;
+    color: #fff; }
+    .actionButton_yellow:not([disabled]):focus, .actionButton_yellow:not([disabled]):hover {
+      background-color: #b39c03; }
+
+.unstyledButton {
+  border: 0;
+  background: 0;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.position_relative {
+  position: relative; }
+
+.position_absolute {
+  position: absolute; }
+
+.after:after {
+  content: ""; }
+
+.after_absolute:after {
+  position: absolute; }
+
+.color_paleLinks a {
+  color: #333b4e;
+  opacity: 0.8; }
+
+.color_blue {
+  color: #333b4e; }
+
+.color_green {
+  color: #2dc86f; }
+
+.color_red {
+  color: #ed3d4e; }
+
+.color_white {
+  color: #fff; }
+  .color_white-force {
+    color: #fff !important; }
+
+.color_black {
+  color: #212121; }
+
+.color_darkBlue {
+  color: #202736; }
+
+.color_gray {
+  color: #e8e8e8; }
+
+.color_pale {
+  color: rgba(32, 39, 54, 0.4); }
+
+.color_yellow {
+  color: #e8c833; }
+
+.border_gray {
+  border-color: #e2e3e6; }
+
+.border_horizontal {
+  border: solid #eee;
+  border-width: 1px 0; }
+
+.border_fewRound {
+  border-radius: 10px; }
+
+.border-top_none {
+  border-top: 0 !important; }
+
+.border-top_gray {
+  border-top: 1px solid #e8e8e8; }
+
+.border-bottom_gray {
+  border-bottom: 1px solid #e8e8e8; }
+
+.border_bend {
+  border-radius: 30px !important; }
+
+.border_round {
+  border-radius: 50%; }
+
+.border_none {
+  border: none; }
+
+.background-color_white {
+  background-color: #fff; }
+
+.background-color_pale {
+  background-color: #f3f3f4; }
+
+.background-color_gray {
+  background-color: #b3b3b3; }
+
+.popupBackground {
+  padding-left: 1em;
+  padding-right: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(19, 19, 19, 0.5);
+  z-index: 100;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0; }
+
+.litter {
+  margin: 6em auto;
+  max-width: 860px;
+  padding-top: 2.92857em;
+  padding-bottom: 6em; }
+  @media (min-width: 769px) {
+    .litter {
+      padding-left: 5.71429em;
+      padding-right: 5.71429em; } }
+  @media (max-width: 768px) {
+    .litter {
+      padding-left: 2.5em;
+      padding-right: 1.5em; } }
+  .litter__title {
+    letter-spacing: 0.027em;
+    line-height: 1.5; }
+    @media (min-width: 769px) {
+      .litter__title {
+        margin-bottom: 3.15em; } }
+    @media (max-width: 768px) {
+      .litter__title {
+        margin-bottom: 1.94685em; } }
+
+@media (min-width: 769px) {
+  .userPopupAvatar {
+    margin-right: 6.2em; } }
+
+@media (max-width: 768px) {
+  .userPopupAvatar {
+    margin-right: 3.83189em; } }
+
+@media (max-width: 991px) {
+  .popupUserInfo .userPanelMeta {
+    margin-top: 0; } }
+
+.userPopupButtons {
+  min-width: 257px; }
+  .userPopupButtons__styledButton {
+    height: 39px;
+    min-width: 213px; }
+    @media (min-width: 769px) {
+      .userPopupButtons__styledButton {
+        margin-bottom: 4.15em; } }
+    @media (max-width: 768px) {
+      .userPopupButtons__styledButton {
+        margin-bottom: 2.56489em; } }
+
+.userPopupButton_bottomOffset {
+  margin-bottom: 1.35em; }
+
+.userPopupButton__label {
+  color: #49505f; }
+
+.userPopupButton__icon {
+  color: #969aa4;
+  margin-right: 11px; }
+
+.userPopup__closeButton {
+  right: 10%; }
+
+@media (max-width: 768px) {
+  .newUserPostBlock .col-sm-1 > *:not(img):not(h3), [id*="postAvatar"] > *:not(img):not(h3) {
+    -webkit-transform: translate(11em, -8em);
+            transform: translate(11em, -8em); } }
+
+[id*="postAvatar"] {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 1em;
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  padding: 0;
+  width: 68px;
+  height: 68px; }
+  @media (max-width: 768px) {
+    [id*="postAvatar"] {
+      margin: 2em auto;
+      -webkit-transform: translateX(-4em);
+              transform: translateX(-4em); } }
+  [id*="postAvatar"]:after {
+    content: "";
+    position: absolute; }
+  [id*="postAvatar"],
+  [id*="postAvatar"] img {
+    border-radius: 50%; }
+  @media (max-width: 768px) {
+    [id*="postAvatar"] h3 {
+      text-align: left;
+      -webkit-transform: translate(8.5em, -7em);
+              transform: translate(8.5em, -7em); } }
+  [id*="postAvatar"] img {
+    min-height: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%; }
+
+.podium-avatar {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+[id*="postAvatar"] h3,
+.userAvatar h3 {
+  white-space: nowrap; }
+
+.userAvatar,
+.podium-post [id*="postAvatar"] {
+  z-index: 1; }
+
+.userAvatar_big {
+  width: 85px;
+  height: 85px; }
+
+.userAvatar_small {
+  width: 68px;
+  height: 68px; }
+
+.userAvatar__title {
+  margin-top: 1.15em; }
+
+.userAvatar__border {
+  width: 160%;
+  height: 160%;
+  top: -30%;
+  left: -30%;
+  -webkit-transform: rotate(35deg) rotateX(180deg);
+          transform: rotate(35deg) rotateX(180deg);
+  z-index: -1; }
+
+.userAvatar_big {
+  width: 85px;
+  height: 85px; }
+
+.raitingBorder {
+  stroke-linecap: round;
+  fill: none;
+  stroke-width: 6;
+  stroke-dasharray: 310;
+  cx: 50;
+  cy: 50;
+  r: 40; }
+  .raitingBorder_black {
+    stroke: #C2C8CE;
+    stroke-dashoffset: 135.717; }
+  .raitingBorder_main {
+    stroke-dashoffset: 340; }
+  .raitingBorder__title {
+    margin-top: 1.15em; }
+  .raitingBorder__border {
+    width: 160%;
+    height: 160%;
+    top: -30%;
+    left: -30%;
+    -webkit-transform: rotate(35deg) rotateX(180deg);
+            transform: rotate(35deg) rotateX(180deg);
+    z-index: -1; }
+
+.raitingBorder {
+  stroke-linecap: round;
+  fill: none;
+  stroke-width: 6;
+  stroke-dasharray: 310;
+  cx: 50;
+  cy: 50;
+  r: 40; }
+  .raitingBorder_black {
+    stroke: #C2C8CE;
+    stroke-dashoffset: 135.717; }
+  .raitingBorder_main {
+    stroke-dashoffset: 340; }
+
+.padding_zero {
+  padding: 0; }
+
+.padding-top_base {
+  padding-top: 1em; }
+  .padding-top_base-force {
+    padding-top: 1em !important; }
+
+.padding-top_large {
+  padding-top: 1.9em; }
+
+.padding-bottom_78 {
+  padding-bottom: 78px; }
+
+.padding-bottom_small {
+  padding-bottom: .5em; }
+
+.padding-left_zero {
+  padding-left: 0; }
+
+.padding-left_small {
+  padding-left: .5em; }
+
+.padding-left_base {
+  padding-left: 1em; }
+
+.padding-left_half {
+  margin-left: 0.5em; }
+
+.padding-left_increased-quarter {
+  margin-left: 1.75em; }
+
+.padding-right_zero {
+  padding-right: 0; }
+
+.padding-right_large-rem {
+  padding-right: 2rem; }
+
+.padding-right_increased {
+  padding-right: 1.5em; }
+
+.padding-right_10 {
+  padding-right: 10px; }
+
+@media (max-width: 768px) {
+  .padding-right_zero-xs {
+    padding-right: 0; } }
+
+@media (max-width: 768px) {
+  .padding_container-xs {
+    padding-left: 1.5em;
+    padding-right: 1.5em; } }
+
+.newUserPostBlock {
+  padding-bottom: 10px; }
+  @media (max-width: 768px) {
+    .newUserPostBlock {
+      margin-left: 1.25em; } }
+  @media (min-width: 769px) {
+    .newUserPostBlock [name="preview-button"] {
+      -webkit-transform: translateY(-0.5em);
+              transform: translateY(-0.5em); } }
+  .newUserPostBlock .popover.podium {
+    padding-bottom: 21px; }
+  .newUserPostBlock .col-sm-1 {
+    padding-right: 0; }
+    @media (min-width: 769px) {
+      .newUserPostBlock .col-sm-1 {
+        -webkit-transform: translateX(-0.1em);
+                transform: translateX(-0.1em);
+        padding-left: 0.3em; } }
+    @media (max-width: 768px) {
+      .newUserPostBlock .col-sm-1 {
+        margin: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        max-height: 110px; } }
+    @media (max-width: 768px) {
+      .newUserPostBlock .col-sm-1 > * {
+        -webkit-transform: none !important;
+                transform: none !important; } }
+    @media (max-width: 768px) {
+      .newUserPostBlock .col-sm-1 > h3 {
+        margin-top: 0;
+        margin-left: 2em; } }
+    @media (max-width: 768px) {
+      .newUserPostBlock .col-sm-1 > .postUserInfo {
+        -webkit-transform: translate(-6.3em, 3em) !important;
+                transform: translate(-6.3em, 3em) !important; } }
+  .newUserPostBlock .userAvatar {
+    margin-left: -0.3em; }
+  .newUserPostBlock .popover.right {
+    margin-left: 1em; }
+
+@media (max-width: 768px) {
+  .forumSingleThread {
+    padding: 0; } }
+
+.forumSingleThread .list-view {
+  padding: 1.6em 3.25em 0 2.625em;
+  max-width: none !important; }
+  @media (max-width: 768px) {
+    .forumSingleThread .list-view {
+      padding-left: 0;
+      padding-right: 1.5em; } }
+  .forumSingleThread .list-view:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+.forumSingleThread .panel-heading {
+  padding: 1.3em 2.2em 1.1em; }
+
+.popover-content.podium-gradient {
+  background-color: #f3f3f3;
+  background-image: none;
+  max-width: 93.83634431455897980871%;
+  margin: auto;
+  border-radius: 10px;
+  color: rgba(86, 93, 108, 0.7);
+  padding: 1.57143em 7.64286em 1.07143em 1.35714em;
+  font-size: 14px; }
+  @media (max-width: 768px) {
+    .popover-content.podium-gradient {
+      padding-right: 1em; } }
+
+.podium-post {
+  margin-right: 0;
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0.6em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .podium-post [id*="postContent"] {
+    margin-left: auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-right: 0.15em;
+    margin-bottom: 1em; }
+    @media (max-width: 768px) {
+      .podium-post [id*="postContent"] {
+        padding-left: 0; } }
+
+.popover-title {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.padding-horizontal_increased-quarter {
+  padding-right: 1.8em;
+  padding-left: 1.8em; }
+
+.postUserInfo {
+  min-height: 135px; }
+
+.forumUserInfoItem {
+  margin-left: -0.8em; }
+  .forumUserInfoItem:not(:first-child) {
+    margin-top: 1em; }
+  .forumUserInfoItem__icon {
+    margin-right: 0.75em; }
+    .forumUserInfoItem__icon_time {
+      min-width: 14px;
+      height: 1em; }
+
+.userPostActions {
+  left: 0;
+  bottom: 26px;
+  padding-left: 3em;
+  padding-right: 3em; }
+
+.postUserTopAction__icon {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms; }
+
+.userPostAction__button_like[class*="btn"] {
+  color: #2dc86f !important; }
+  .userPostAction__button_like[class*="btn"], .userPostAction__button_like[class*="btn"]:hover, .userPostAction__button_like[class*="btn"]:focus, .userPostAction__button_like[class*="btn"]:active {
+    color: #3bd37c !important;
+    background-color: transparent;
+    border: 0; }
+
+.userPostAction__button_dislike[class*="btn"] {
+  color: #ed3d4e !important; }
+  .userPostAction__button_dislike[class*="btn"], .userPostAction__button_dislike[class*="btn"]:hover, .userPostAction__button_dislike[class*="btn"]:focus, .userPostAction__button_dislike[class*="btn"]:active {
+    color: #ef5463 !important;
+    background-color: transparent;
+    border: 0; }
+
+.ql-snow.ql-toolbar button:hover .ql-stroke,
+.ql-snow .ql-toolbar button:hover .ql-stroke,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #2dc86f; }
+
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active,
+.ql-snow.ql-toolbar .ql-picker-label:hover,
+.ql-snow .ql-toolbar .ql-picker-label:hover,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow.ql-toolbar .ql-picker-item:hover,
+.ql-snow .ql-toolbar .ql-picker-item:hover,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #2dc86f; }
+
+.ql-toolbar, .ql-picker-options, .ql-formats:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ql-formats svg * {
+  stroke: #727784; }
+
+.ql-formats button:hover svg, .ql-formats button:focus svg, .ql-formats button:active svg {
+  border-color: #2dc86f; }
+
+.ql-container {
+  min-height: 205px !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.ql-toolbar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  @media (max-width: 768px) {
+    .ql-toolbar {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.newUserPostSandbox {
+  padding-bottom: 21px; }
+  .newUserPostSandbox__button {
+    min-width: 231px;
+    height: 38px; }
+  .newUserPostSandbox__previewButton {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em); }
+  .newUserPostSandbox .ql-toolbar, .newUserPostSandbox .ql-picker-options, .newUserPostSandbox .ql-formats:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .newUserPostSandbox .ql-formats svg * {
+    stroke: #727784; }
+  .newUserPostSandbox .ql-formats button:hover svg, .newUserPostSandbox .ql-formats button:focus svg, .newUserPostSandbox .ql-formats button:active svg {
+    border-color: #2dc86f; }
+  .newUserPostSandbox .ql-formats:nth-of-type(3) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+  .newUserPostSandbox .ql-formats:nth-of-type(1) {
+    margin-left: 5em; }
+  .newUserPostSandbox .ql-formats:nth-of-type(2) .ql-list:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .newUserPostSandbox .ql-container {
+    min-height: 205px !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .newUserPostSandbox .ql-toolbar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    @media (max-width: 768px) {
+      .newUserPostSandbox .ql-toolbar {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  .newUserPostSandbox .ql-picker-label {
+    display: none; }
+  .newUserPostSandbox .ql-picker-options {
+    border: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+  .newUserPostSandbox .ql-picker-item {
+    line-height: 1.9; }
+    .newUserPostSandbox .ql-picker-item svg {
+      border: 1px solid currentColor; }
+  .newUserPostSandbox .ql-container, .newUserPostSandbox .ql-toolbar {
+    border-color: #e2e3e6; }
+  .newUserPostSandbox .form-group:first-of-type {
+    margin-bottom: 1.5em; }
+
+.forumSectionHeading__title {
+  margin-top: 0.3em; }
+
+.popover.podium {
+  margin-left: 1.45em;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+  border: 0;
+  margin-top: 0.8em;
+  min-height: 271px;
+  padding: 0 0 65px 0; }
+  .popover.podium.right > .arrow {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    left: -12px !important;
+    top: 40px !important; }
+    .popover.podium.right > .arrow_hight {
+      top: 36px !important; }
+    .popover.podium.right > .arrow:before {
+      -webkit-transform: translateX(3px);
+              transform: translateX(3px); }
+  .popover.podium.left > .arrow {
+    top: 40px !important; }
+    .popover.podium.left > .arrow_hight {
+      top: 36px !important; }
+    .popover.podium.left > .arrow:before {
+      -webkit-transform: translateX(-3px);
+              transform: translateX(-3px); }
+  .popover.podium > .arrow {
+    width: 12px !important;
+    height: 22px !important; }
+    .popover.podium > .arrow, .popover.podium > .arrow:after {
+      border: 0 !important; }
+    .popover.podium > .arrow:after {
+      z-index: 2;
+      background-color: #fff; }
+    .popover.podium > .arrow:before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.25);
+      -webkit-filter: blur(10px);
+              filter: blur(10px);
+      z-index: 1;
+      position: absolute; }
+    .popover.podium > .arrow:after, .popover.podium > .arrow:before {
+      position: absolute;
+      -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+              clip-path: polygon(100% 50%, 0 0, 0 100%);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0; }
+    .popover.podium > .arrow_gray:after {
+      background-color: #f3f3f4; }
+
+.popover.podium.popover.podium {
+  display: block;
+  width: auto;
+  max-width: none;
+  position: relative;
+  z-index: auto; }
+
+.newUserPostBlock_buttons.newUserPostBlock_buttons {
+  padding-bottom: 3em; }
+
+.lastMessagesButtons {
+  margin-top: 2.6em;
+  margin-bottom: 3em; }
+  .lastMessagesButtons__button {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    height: 35px; }
+    .lastMessagesButtons__button:nth-of-type(1) {
+      max-width: 136px;
+      min-width: 136px; }
+      @media (max-width: 445px) {
+        .lastMessagesButtons__button:nth-of-type(1) {
+          margin: auto; } }
+    .lastMessagesButtons__button:nth-of-type(2) {
+      min-width: 170px;
+      max-width: 170px;
+      padding-right: 0;
+      padding-left: 2em; }
+      @media (max-width: 445px) {
+        .lastMessagesButtons__button:nth-of-type(2) {
+          margin: 1em auto; } }
+      .lastMessagesButtons__button:nth-of-type(2) .lastMessagesButtons__button_label {
+        margin-right: -7px; }
+
+.list-view:not(.forumSingleThread .list-view) {
+  max-width: 797px; }
+
+@media (max-width: 768px) {
+  .lastMessages {
+    padding-left: 2rem; } }
+
+.lastMessages .panel {
+  border: 0; }
+  .lastMessages .panel small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .lastMessages .panel small .btn {
+      -webkit-box-ordinal-group: 11;
+          -ms-flex-order: 10;
+              order: 10; }
+
+@media (min-width: 769px) {
+  .asideWidth_xsUp {
+    max-width: 336px; } }
+
+@media (min-width: 769px) {
+  .forumSections {
+    max-width: 797px;
+    width: 100%; } }
+
+@media (max-width: 768px) {
+  .forumSections {
+    padding-right: 2rem;
+    padding-left: 2rem; } }
+
+.forumSection {
+  overflow: visible !important;
+  margin-bottom: 42px !important;
+  max-width: 1101px; }
+  .forumSection .table {
+    margin-bottom: 0; }
+  .forumSection table picture {
+    max-width: 48px; }
+  @media (max-width: 991px) {
+    .forumSection {
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto; } }
+  .forumSection .pagination {
+    padding: 3px 5px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    float: none !important;
+    margin-left: auto; }
+    .forumSection .pagination li.active a {
+      background-color: #202736;
+      color: #fff; }
+    .forumSection .pagination li a {
+      border-radius: 50%;
+      font-size: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-width: 28px;
+      min-height: 29px;
+      -webkit-transition-duration: 300ms;
+              transition-duration: 300ms;
+      border: 0;
+      background-color: transparent;
+      color: #9c9c9c; }
+    .forumSection .pagination .prev,
+    .forumSection .pagination .next {
+      display: none; }
+  @media (max-width: 991px) {
+    .forumSection table {
+      overflow-x: auto;
+      max-width: 100%;
+      display: block; } }
+  .forumSection .table > thead > tr > th,
+  .forumSection .table > tbody > tr > th,
+  .forumSection .table > tfoot > tr > th,
+  .forumSection .table > thead > tr > td,
+  .forumSection .table > tbody > tr > td,
+  .forumSection .table > tfoot > tr > td {
+    vertical-align: middle; }
+
+.lastMessages .panel tbody td,
+.tableThread__latest {
+  padding-left: 1.25em !important; }
+
+.tableThread__latest_message {
+  max-width: 245px; }
+
+.tableThreadDescription__link {
+  padding-left: 1em;
+  margin-top: 0.25em; }
+
+.tableThreadDescription__image {
+  margin-right: 1em; }
+
+.tableThreadDescription__title {
+  margin-top: 0.5em; }
+
+.forumSearchController {
+  height: 36px; }
+  .forumSearchController__input {
+    padding-left: 1.75em;
+    letter-spacing: 0.25px;
+    padding-right: 6em; }
+  .forumSearchController__button {
+    min-width: 65px;
+    top: -1px;
+    right: -1px;
+    height: calc(100% + 2px); }
+    .forumSearchController__button,
+    .forumSearchController__button * {
+      -webkit-transition-duration: 250ms;
+              transition-duration: 250ms; }
+
+.first-letter_bold:first-letter {
+  font-weight: bold; }
+
+.forumInfoBody_verticalOffsets {
+  padding-top: 1.6em;
+  padding-bottom: 1.7em; }
+
+.forumInfoFooter {
+  padding-left: 1.8em; }
+  .forumInfoFooter_verticalOffsets {
+    padding-top: 1.25em;
+    padding-bottom: 0.7em; }
+  .forumInfoFooterQuantity {
+    margin-right: 1.8em; }
+    @media (max-width: 768px) {
+      .forumInfoFooterQuantity {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .forumInfoFooterQuantity__label {
+      margin-left: 1.35em; }
+
+.forumBreadcrumbs {
+  margin-bottom: 2.3em; }
+  .forumBreadcrumbs ul {
+    padding-top: 0; }
+    @media (max-width: 445px) {
+      .forumBreadcrumbs ul {
+        min-width: 100%; } }
+
+.forumTopSearch {
+  max-width: 313px;
+  margin-top: -70px;
+  margin-bottom: 39px; }
+  @media (max-width: 768px) {
+    .forumTopSearch {
+      margin: 0em auto 2em; } }
+  .forumTopSearch input {
+    border: 1px solid #ddd; }
+
+.greenSectionsLabels .btn.btn-xs.btn-default {
+  border: 0;
+  padding: 0;
+  font-size: 12px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .greenSectionsLabels .btn.btn-xs.btn-default, .greenSectionsLabels .btn.btn-xs.btn-default:active, .greenSectionsLabels .btn.btn-xs.btn-default:focus {
+    background-color: transparent; }
+  .greenSectionsLabels .btn.btn-xs.btn-default .glyphicon {
+    font-size: 10.5px;
+    margin-right: 2px;
+    top: 0px; }
+  .greenSectionsLabels .btn.btn-xs.btn-default span {
+    color: #2dc86f; }
+
+.forumSectionHeading,
+.lastMessages .panel-heading {
+  font-weight: 600;
+  font-family: "Open-Sans-Semibold";
+  padding: 1.5em 1.5em 1.25em; }
+
+@media (max-width: 768px) {
+  .forumInfoFooterList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (max-width: 768px) {
+  .forumInfoFooterList li {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: 0; } }
+
+.extendedSearch {
+  top: -3em;
+  right: 1.5em; }
+  @media (max-width: 768px) {
+    .extendedSearch {
+      position: relative;
+      top: auto;
+      right: auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 1.5em;
+      margin-top: 1em; } }
+  .extendedSearch__label {
+    padding-bottom: 0.5em;
+    width: 19px;
+    height: 19px;
+    line-height: 0; }
+
+.podium-thread-line {
+  height: 77px; }
+
+.forumCellThread {
+  padding-left: 2.1em !important; }
+  @media (min-width: 1200px) {
+    .forumCellThread {
+      min-width: 518px; } }
+  @media (max-width: 1199px) {
+    .forumCellThread {
+      min-width: 200px; } }
+
+.forumCellMessages {
+  white-space: nowrap; }
+
+.forumCellReplies_row {
+  text-indent: -1.25%; }
+
+.forumCellViews {
+  min-width: 148px; }
+
+.forumCellLatest {
+  white-space: nowrap; }
+
+.table > tbody + tbody {
+  border-top-width: 1px; }
+
+.unreadMessagesSection {
+  margin-bottom: 112px !important; }
+
+.forumSection_withPagination .pagination {
+  position: absolute;
+  top: 100%;
+  margin-top: 30px;
+  z-index: 1;
+  right: 0;
+  margin-right: 3.2em; }
+  @media (max-width: 768px) {
+    .forumSection_withPagination .pagination {
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0;
+      top: 0;
+      margin-left: 1.25em; } }
+
+.forumSection_withPagination-zeroTopOffset .pagination {
+  margin-top: 0; }
+
+.forumSectionTableHead {
+  height: 50px; }
+  .forumSectionTableHead_tall {
+    height: 77px; }
+  .forumSectionTableHead_childOffset-horizontal > th:first-child {
+    padding-left: 1.4em; }
+  .forumSectionTableHead_childOffset-vertical > th {
+    padding-top: 1em !important; }
+  .forumSectionTableHead__latest {
+    padding-left: 0.8em; }
+  .forumSectionTableHead__description {
+    min-width: 314px; }
+  .forumSectionTableHead > th {
+    vertical-align: middle !important;
+    font-weight: 600;
+    font-family: "Open-Sans-Semibold"; }
+
+.forumUserContainer {
+  padding: 0 5.5px; }
+
+.padding_panelOffsets {
+  padding-left: 37px;
+  padding-right: 21px; }
+
+.margin_negativeVerticalQuarters {
+  margin-left: -0.25em;
+  margin-right: -0.25em; }
+
+.forumUser {
+  margin-bottom: 11px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #202736;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 25px;
+  height: 24px;
+  width: 83px; }
+  .forumUser__name {
+    max-width: 50px; }
+  .forumUser .glyphicon {
+    font-size: 10px;
+    margin-right: 5px;
+    top: 0px; }
+  .forumUser:hover, .forumUser:focus, .forumUser:active {
+    color: #2dc86f;
+    border-color: #fff; }
+
+.font-size_10 {
+  font-size: 10px; }
+
+.font-size_11 {
+  font-size: 11.2px; }
+
+.font-size_12 {
+  font-size: 12px; }
+
+.font-size_13 {
+  font-size: 13px; }
+
+.font-size_14 {
+  font-size: 14px; }
+
+.font-size_15 {
+  font-size: 15px; }
+
+.font-size_16 {
+  font-size: 16px; }
+
+.font-size_17 {
+  font-size: 17px; }
+
+.font-size_18 {
+  font-size: 18px; }
+
+.font-size_24 {
+  font-size: 24px; }
+
+.font-weight_semi {
+  font-weight: 600; }
+
+.font-weight_bold {
+  font-weight: 900; }
+
+.font-weight_light {
+  font-weight: 200; }
+
+.font-style_italic {
+  font-style: italic; }
+
+.content {
+  overflow: hidden; }
+
+body {
+  color: #333;
+  line-height: 1.5;
+  background-color: #f4f5f5;
+  font-size: calc(1rem + 1vw);
+  font-family: 'Open Sans', sans-serif; }
+
+.out {
+  max-width: calc(1024px + 3rem);
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+#test {
+  max-width: 60ch; }
+
+.tests {
+  margin-top: 6rem; }
+  .tests__title {
+    margin-bottom: 4.5rem;
+    margin-left: -4px; }
+
+.testBlock {
+  font-size: 1em;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 1rem 2rem 2rem 3.5rem;
+  margin-bottom: 3rem; }
+  .testBlock__subheading, .testBlock__title {
+    margin-left: -5px; }
+  .testBlock__subheading {
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    font-size: 1.3em; }
+  .testBlock__notification {
+    margin-top: 2rem; }
+  .testBlock__success {
+    color: #2dc86f; }
+  .testBlock__failure {
+    color: #ed3d4e; }

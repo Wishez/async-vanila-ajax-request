@@ -1,0 +1,444 @@
+$i: !important;
+@import "thread";
+
+.newUserPostBlock_buttons.newUserPostBlock_buttons {
+    padding-bottom: 3em;
+}
+
+.lastMessagesButtons {
+    margin-top: 2.6em;
+    margin-bottom: 3em;
+    &__button {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        height: 35px;
+        &:nth-of-type(1) {
+            max-width: 136px;
+            min-width: 136px;
+            @include breakpoint($xxs) {
+                margin: auto;
+            }
+        }
+        &:nth-of-type(2) {
+            min-width: 170px;
+            max-width: 170px;
+            padding-right: 0;
+            padding-left: 2em;
+            @include breakpoint($xxs) {
+                margin: 1em auto;
+            }
+            & .lastMessagesButtons__button_label {
+                margin-right: -7px;
+            }
+        }
+    }
+}
+
+.list-view:not(.forumSingleThread .list-view) {
+    max-width: 797px;
+}
+
+.lastMessages {
+    @include breakpoint($xs) {
+        padding-left: 2rem;
+    }
+    .panel {
+        border: 0;
+        small {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .btn {
+                order: 10;
+            }
+        }
+    }
+}
+
+.asideWidth {
+    &_xsUp {
+        @include breakpoint($xs-up) {
+            max-width: 336px;
+        }
+    }
+}
+
+.forumSections {
+    @include breakpoint($xs-up) {
+        max-width: 797px;
+        width: 100%;
+    }
+    @include breakpoint($xs) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.forumSection {
+    overflow: visible $i;
+    margin-bottom: 42px $i;
+    max-width: 1101px;
+    .table {
+        margin-bottom: 0;
+    }
+    table picture {
+        max-width: 48px;
+    }
+    @include breakpoint($sm-less) {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pagination {
+        padding: 3px 5px;
+        background-color: #f3f3f3;
+        border-radius: 30px;
+        float: none $i;
+        margin-left: auto;
+        li {
+            &.active {
+                a {
+                    background-color: #202736;
+                    color: #fff;
+                }
+            }
+            a {
+                border-radius: 50%;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 28px;
+                min-height: 29px;
+                transition-duration: 300ms;
+                border: 0;
+                background-color: transparent;
+                color: #9c9c9c;
+            }
+        }
+        .prev,
+        .next {
+            display: none;
+        }
+    }
+    table {
+        @include breakpoint($sm-less) {
+            overflow-x: auto;
+            max-width: 100%;
+            display: block;
+        }
+    }
+    .table>thead>tr>th,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>tbody>tr>td,
+    .table>tfoot>tr>td {
+        vertical-align: middle;
+    }
+}
+
+.lastMessages .panel tbody td,
+.tableThread__latest {
+    padding-left: 1.25em $i;
+}
+
+.tableThread {
+    &__latest {
+        &_message {
+            max-width: 245px;
+        }
+    }
+}
+
+.tableThreadDescription {
+    &__link {
+        padding-left: 1em;
+        margin-top: 0.25em;
+    }
+    &__image {
+        margin-right: 1em;
+    }
+    &__title {
+        margin-top: 0.5em;
+    }
+}
+
+.forumSearchController {
+    height: 36px;
+    &__input {
+        padding-left: 1.75em;
+        letter-spacing: 0.25px;
+        padding-right: 6em;
+    }
+    &__button {
+        min-width: 65px;
+        top: -1px;
+        right: -1px;
+        height: calc(100% + 2px);
+        &,
+        * {
+            transition-duration: 250ms;
+        }
+    }
+}
+
+.first-letter {
+    &_bold {
+        &:first-letter {
+            font-weight: bold;
+        }
+    }
+}
+
+.forumInfo {
+    &Body {
+        &_verticalOffsets {
+            padding-top: 1.6em;
+            padding-bottom: 1.7em;
+        }
+    }
+    &Footer {
+        padding-left: 1.8em;
+        &_verticalOffsets {
+            padding-top: 1.25em;
+            padding-bottom: 0.7em;
+        }
+        &Quantity {
+            margin-right: 1.8em;
+            @include breakpoint($xs) {
+                justify-content: center;
+            }
+            &__label {
+                margin-left: 1.35em;
+            }
+        }
+    }
+}
+
+.forumBreadcrumbs {
+    margin-bottom: 2.3em;
+    ul {
+        padding-top: 0;
+        @include breakpoint($xxs) {
+            min-width: 100%
+        }
+    }
+}
+
+.forumTopSearch {
+    max-width: 313px;
+    margin-top: -70px;
+    margin-bottom: 39px;
+    @include breakpoint($xs) {
+        margin: 0em auto 2em;
+    }
+    input {
+        border: 1px solid #ddd;
+    }
+}
+
+.greenSectionsLabels {
+    .btn.btn-xs.btn-default {
+        border: 0;
+        padding: 0;
+        font-size: 12px;
+        transition-duration: 250ms;
+        display: flex;
+        &,
+        &:active,
+        &:focus {
+            background-color: transparent;
+        }
+        .glyphicon {
+            font-size: 10.5px;
+            margin-right: 2px;
+            top: 0px;
+        }
+        span {
+            color: $green;
+        }
+    }
+}
+
+.forumSectionHeading,
+.lastMessages .panel-heading {
+    font-weight: 600;
+    font-family: "Open-Sans-Semibold";
+    padding: 1.5em 1.5em 1.25em;
+}
+
+.forumInfoFooterList {
+    @include breakpoint($xs) {
+        justify-content: center;
+        flex-direction: column;
+    }
+    li {
+        @include breakpoint($xs) {
+            margin-top: 1em;
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+.extendedSearch {
+    top: -3em;
+    right: 1.5em;
+    @include breakpoint($xs) {
+        position: relative;
+        top: auto;
+        right: auto;
+        justify-content: center;
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+    }
+    &__label {
+        padding-bottom: 0.5em;
+        width: 19px;
+        height: 19px;
+        line-height: 0;
+    }
+}
+
+.threadsTable {
+    // tr:not(.forumSectionHeading) {
+    //     height: 77px;
+    // }
+}
+
+.podium-thread-line {
+    height: 77px;
+}
+
+.forumCell {
+    &Thread {
+        padding-left: 2.1em $i;
+        @include breakpoint($lg) {
+            min-width: 518px;
+        }
+        @include breakpoint($md-less) {
+            min-width: 200px;
+        }
+    }
+    &Messages {
+        white-space: nowrap;
+    }
+    &Replies {
+        &_row {
+            text-indent: -1.25%;
+        }
+    }
+    &Views {
+        min-width: 148px;
+    }
+    &Latest {
+        white-space: nowrap;
+    }
+}
+
+.table>tbody+tbody {
+    border-top-width: 1px;
+}
+
+.unreadMessagesSection {
+    margin-bottom: 112px$i;
+}
+
+.forumSection_withPagination {
+    .pagination {
+        position: absolute;
+        top: 100%;
+        margin-top: 30px;
+        z-index: 1;
+        right: 0;
+        margin-right: 3.2em;
+        @include breakpoint($xs) {
+            position: sticky;
+            left: 0;
+            top: 0;
+            margin-left: 1.25em;
+        }
+    }
+    &-zeroTopOffset {
+        .pagination {
+            margin-top: 0;
+        }
+    }
+}
+
+.forumSectionTableHead {
+    height: 50px;
+    &_tall {
+        height: 77px;
+    }
+    &_childOffset {
+        &-horizontal {
+            >th {
+                &:first-child {
+                    padding-left: 1.4em;
+                }
+            }
+        }
+        &-vertical {
+            >th {
+                padding-top: 1em $i;
+            }
+        }
+    }
+    &__latest {
+        padding-left: 0.8em;
+    }
+    &__description {
+        min-width: 314px;
+    }
+    &>th {
+        vertical-align: middle $i;
+        font-weight: 600;
+        font-family: "Open-Sans-Semibold";
+    }
+}
+
+.forumUserContainer {
+    padding: 0 5.5px;
+}
+
+.padding {
+    &_panelOffsets {
+        padding-left: 37px;
+        padding-right: 21px;
+    }
+}
+
+.margin {
+    &_negativeVerticalQuarters {
+        margin-left: -0.25em;
+        margin-right: -0.25em;
+    }
+}
+
+.forumUser {
+    margin-bottom: 11px;
+    transition-duration: 250ms;
+    transition-timing-function: $standart;
+    color: $darkBlue;
+    background-color: $white;
+    border: 1px solid #e8e8e8;
+    border-radius: 25px;
+    height: 24px;
+    width: 83px;
+    &__name {
+        max-width: 50px;
+    }
+    .glyphicon {
+        font-size: 10px;
+        margin-right: 5px;
+        top: 0px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $green;
+        border-color: $white;
+    }
+}

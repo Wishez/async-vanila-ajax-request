@@ -1,0 +1,420 @@
+.newUserPostBlock {
+    padding-bottom: 10px;
+    @include breakpoint($xs) {
+        margin-left: 1.25em;
+    }
+    [name="preview-button"] {
+        @include breakpoint($xs-up) {
+            transform: translateY(-.5em);
+        }
+    }
+    .popover.podium {
+        padding-bottom: 21px;
+    }
+    .col-sm-1 {
+        padding-right: 0;
+        @include breakpoint($xs-up) {
+            transform: translateX(-0.1em);
+            padding-left: 0.3em;
+        }
+        @include breakpoint($xs) {
+            margin: auto;
+            flex-direction: row;
+            max-height: 110px;
+        }
+        >* {
+            @include breakpoint($xs) {
+                transform: none $i;
+            }
+        }
+        >h3 {
+            @include breakpoint($xs) {
+                margin-top: 0;
+                margin-left: 2em;
+            }
+        }
+        >.postUserInfo {
+            @include breakpoint($xs) {
+                transform: translate(-6.3em, 3em) $i;
+            }
+        }
+    }
+    .userAvatar {
+        margin-left: -0.3em;
+    }
+    .popover.right {
+        margin-left: 1em;
+    }
+}
+
+.forumSingleThread {
+    @include breakpoint($xs) {
+        padding: 0;
+    }
+    .list-view {
+        padding: 1.6em em(52, 16) 0 em(42, 16);
+        max-width: none $i;
+        @include breakpoint($xs) {
+            padding-left: 0;
+            padding-right: 1.5em;
+        }
+        &:first-of-type {
+            display: flex;
+            flex-direction: column;
+        }
+        &:nth-of-type(2) {}
+    }
+    .panel-heading {
+        padding: 1.3em 2.2em 1.1em;
+    }
+}
+
+.popover-content {
+    &.podium-gradient {
+        background-color: #f3f3f3;
+        background-image: none;
+        max-width: 93.83634431455897980871%;
+        margin: auto;
+        border-radius: 10px;
+        color: rgba(86, 93, 108, 0.7);
+        padding: em(22, 14) em(107, 14) em(15, 14) em(19, 14);
+        font-size: 14px;
+        @include breakpoint($xs) {
+            padding-right: 1em;
+        }
+    }
+}
+
+.podium-post {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    padding-left: 0.6em;
+    flex-wrap: wrap;
+    [id*="postContent"] {
+        margin-left: auto;
+        flex-grow: 1;
+        padding-right: 0.15em;
+        margin-bottom: 1em;
+        @include breakpoint($xs) {
+            padding-left: 0;
+        }
+    }
+}
+
+.popover-title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.padding {
+    &-horizontal {
+        &_increased {
+            &-quarter {
+                padding-right: 1.8em;
+                padding-left: 1.8em;
+            }
+        }
+    }
+}
+
+.postUserInfo {
+    min-height: 135px;
+}
+
+.forumUserInfoItem {
+    margin-left: -0.8em;
+    &:not(:first-child) {
+        margin-top: 1em;
+    }
+    &__icon {
+        margin-right: 0.75em;
+        &_time {
+            min-width: 14px;
+            height: 1em;
+        }
+    }
+}
+
+.userPostActions {
+    left: 0;
+    bottom: 26px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.postUserTopActions {}
+
+.postUserTopAction {
+    &__icon {
+        transition-duration: 250ms;
+    }
+}
+
+.userPostAction {
+    &__button {
+        &_like {
+            &[class*="btn"] {
+                color: $green $i;
+                &,
+                &:hover,
+                &:focus,
+                &:active {
+                    color: lighten($green, 5%) $i;
+                    background-color: transparent;
+                    border: 0;
+                }
+            }
+        }
+        &_dislike {
+            &[class*="btn"] {
+                color: $red $i;
+                &,
+                &:hover,
+                &:focus,
+                &:active {
+                    color: lighten($red, 5%) $i;
+                    background-color: transparent;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+.ql-snow.ql-toolbar button:hover .ql-stroke,
+.ql-snow .ql-toolbar button:hover .ql-stroke,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+    stroke: $green;
+}
+
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active,
+.ql-snow.ql-toolbar .ql-picker-label:hover,
+.ql-snow .ql-toolbar .ql-picker-label:hover,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow.ql-toolbar .ql-picker-item:hover,
+.ql-snow .ql-toolbar .ql-picker-item:hover,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+    color: $green;
+}
+
+.ql- {
+    &toolbar,
+    &picker-options,
+    &formats:nth-of-type(2) {
+        display: flex;
+    }
+    &formats {
+        svg * {
+            stroke: #727784;
+        }
+        button {
+            &:hover,
+            &:focus,
+            &:active {
+                svg {
+                    border-color: $green;
+                }
+            }
+        }
+    }
+    &container {
+        min-height: 205px$i;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    &toolbar {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        flex-flow: row wrap;
+        @include breakpoint($xs) {
+            justify-content: center;
+        }
+    }
+}
+
+.newUserPostSandbox {
+    padding-bottom: 21px;
+    &__button {
+        min-width: 231px;
+        height: 38px;
+    }
+    &__previewButton {
+        transform: translateY(-1em);
+    }
+    .ql- {
+        &toolbar,
+        &picker-options,
+        &formats:nth-of-type(2) {
+            display: flex;
+        }
+        &formats {
+            svg * {
+                stroke: #727784;
+            }
+            button {
+                &:hover,
+                &:focus,
+                &:active {
+                    svg {
+                        border-color: $green;
+                    }
+                }
+            }
+            &:nth-of-type(3) {
+                order: -1;
+            }
+            &:nth-of-type(1) {
+                margin-left: 5em;
+            }
+            &:nth-of-type(2) {
+                .ql-list:first-child {
+                    order: 2;
+                }
+            }
+        }
+        &container {
+            min-height: 205px$i;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        &toolbar {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            flex-flow: row wrap;
+            @include breakpoint($xs) {
+                justify-content: center;
+            }
+        }
+        &picker-label {
+            display: none;
+        }
+        &picker-options {
+            border: 0 $i;
+            padding: 0 $i;
+            background-color: transparent $i;
+            box-shadow: none $i;
+        }
+        &picker-item {
+            line-height: 1.9;
+            svg {
+                border: 1px solid currentColor;
+            }
+        }
+        &container,
+        &toolbar {
+            border-color: #e2e3e6;
+        }
+    }
+    .form-group:first-of-type {
+        margin-bottom: 1.5em;
+    }
+}
+
+.forumSectionHeading {
+    &__title {
+        margin-top: 0.3em;
+    }
+}
+
+.popover.podium {
+    margin-left: 1.45em;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    border: 0;
+    margin-top: 0.8em;
+    min-height: 271px;
+    padding: 0 0 65px 0;
+    &.right {
+        >.arrow {
+            transform: rotate(180deg);
+            left: -12px $i;
+            top: 40px $i;
+            &_hight {
+                top: 36px $i;
+            }
+            &:before {
+                transform: translateX(3px);
+            }
+        }
+    }
+    &.left {
+        >.arrow {
+            top: 40px $i;
+            &_hight {
+                top: 36px $i;
+            }
+            &:before {
+                transform: translateX(-3px);
+            }
+        }
+    }
+    >.arrow {
+        width: 12px $i;
+        height: 22px $i; // @include breakpoint($xs) {
+        //     display: none;
+        // }
+        &,
+        &:after {
+            border: 0 $i;
+        }
+        &:after {
+            z-index: 2;
+            background-color: $white;
+        }
+        &:before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.25);
+            filter: blur(10px);
+            z-index: 1;
+            position: absolute;
+        }
+        &:after,
+        &:before {
+            position: absolute;
+            clip-path: polygon(100% 50%, 0 0, 0 100%);
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        &_gray {
+            &:after {
+                background-color: #f3f3f4;
+            }
+        }
+    }
+}
+
+.popover.podium.popover.podium {
+    display: block;
+    width: auto;
+    max-width: none;
+    position: relative;
+    z-index: auto;
+}

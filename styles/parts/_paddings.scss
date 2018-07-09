@@ -1,0 +1,74 @@
+.padding {
+    &_zero {
+        padding: 0;
+    }
+    &-top {
+        &_base {
+            padding-top: 1em;
+            &-force {
+                padding-top: 1em $i;
+            }
+        }
+        &_large {
+            padding-top: 1.9em;
+        }
+    }
+    &-bottom {
+        &_78 {
+            padding-bottom: 78px;
+        }
+        &_small {
+            padding-bottom: .5em;
+        }
+    }
+    &-left {
+        &_zero {
+            padding-left: 0;
+        }
+        &_small {
+            padding-left: .5em;
+        }
+        &_base {
+            padding-left: 1em;
+        }
+        &_half {
+            margin-left: 0.5em;
+        }
+        &_increased {
+            &-quarter {
+                margin-left: 1.75em
+            }
+        }
+    }
+    &-right {
+        &_zero {
+            padding-right: 0;
+        }
+        &_large {
+            &-rem {
+                padding-right: 2rem;
+            }
+        }
+        &_increased {
+            padding-right: 1.5em;
+        }
+        &_10 {
+            padding-right: 10px;
+        }
+        &_zero {
+            &-xs {
+                @include breakpoint($xs) {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    &_container {
+        &-xs {
+            @include breakpoint($xs) {
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+        }
+    }
+}
